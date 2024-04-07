@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Comfortaa", sans-serif;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+main .content {
+  width: 60%;
+  height: 90%;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4862745098);
+  overflow: hidden;
+  overflow-y: scroll;
+}
+main .content .inicio {
+  width: 100%;
+  height: auto;
+  gap: 2vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5vh;
+}
+main .content .inicio img {
+  border-radius: 50%;
+}
+main .content .inicio p {
+  width: 50vw;
+  text-align: justify;
+}
+main .content .links {
+  width: 100%;
+  height: auto;
+  padding: 3vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5vh;
+}
+main .content .links span {
+  width: 70%;
+}
+main .content .links span a {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #000;
+  gap: 1vh;
+  transition: color 0.3s ease-in-out;
+}
+main .content .links span a:hover {
+  color: #356ba8;
+}
+main .content .footer {
+  width: 100%;
+  height: 6vh;
+  border-top: 1px solid rgba(128, 128, 128, 0.5607843137);
+  display: grid;
+  place-items: center;
+}
+
+::selection {
+  background-color: rgba(53, 107, 168, 0.4431372549);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: #ffffff;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #356ba8;
+  border: 0px;
+  border-radius: 3px;
+}
+
+@media (max-width: 560px) {
+  main .content {
+    width: 90%;
+    padding: 1vh;
+  }
+  main .content .inicio p {
+    width: 90%;
+  }
+  main .content .links span {
+    width: 90%;
+  }
+  main .content .footer p {
+    font-size: 10pt;
+  }
+}
+@media (max-width: 450px) {
+  main .inicio h1 {
+    font-size: 18pt;
+  }
+  main .links span a p {
+    font-size: 10pt;
+  }
+}
+@media (max-width: 400px) {
+  main .inicio h1 {
+    font-size: 12pt;
+  }
+  main .inicio p {
+    font-size: 10pt;
+  }
+  main .links img {
+    width: 20px;
+  }
+  main .footer p {
+    font-size: 8px;
+  }
+}
+@media (max-width: 380px) {
+  main .inicio h1 {
+    font-size: 10pt;
+  }
+  main .inicio p {
+    font-size: 8pt;
+  }
+  main .links span a p {
+    font-size: 8pt;
+  }
+  main .footer {
+    font-size: 5pt;
+  }
+}
+@media (max-width: 310px) {
+  main .links span {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
